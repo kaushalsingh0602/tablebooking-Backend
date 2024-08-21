@@ -115,7 +115,7 @@ app.post('/api/book', async (req, res) => {
         }
 
         res.status(200).json({ message: 'Booking successful', allocatedTables: allocation });
-        res.send('hello')
+
       } catch (error) {
         console.error('Error updating tables:', error);
         res.status(500).json({ message: 'Booking failed due to an error' });
