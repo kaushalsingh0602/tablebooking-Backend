@@ -10,6 +10,12 @@ app.use(express.json());
 mongoose.connect('mongodb+srv://kaushalsingh8178:test@cluster0.bpai7.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+})
+.then(() => {
+  console.log('MongoDB connected successfully');
+})
+.catch(err => {
+  console.error('MongoDB connection error:', err);
 });
 
 // Table Schema
