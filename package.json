@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "engines": {
     "node": "20.x"
   },
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vercel/node": "^3.2.8",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
